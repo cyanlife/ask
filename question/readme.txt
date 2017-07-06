@@ -1,1 +1,1 @@
-this is a test for git£¬test v1  dd
+contain echarts  pie ,json from mysql
