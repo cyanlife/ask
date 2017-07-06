@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<title>Insert title here</title>
+</head>
+<body>
+<input class="put" type="text" placeholder="请输入您的用户名" id='account' value=""/>
+<script>function login(){
+			var account =$("#account").val();	
+			 
+			$.ajax({
+			 	    type: "POST",
+			 	    dataType: "json",
+			 	    url:"/1.html",
+			 	    data:{account:account},
+			 	  	success: function (data) {
+					if (data.status == "0") {
+						$("#errorTips").text(data.errMsg).show();
+						$("#loginBtn").text("登 录");
+					}else{
+						window.location.href="/home";
+					}
+			 	    }
+			 });	
+		}
+		</script>
+</body>
+</html>

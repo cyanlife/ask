@@ -1,0 +1,40 @@
+@CHARSET "UTF-8";
+#container{
+	max-width:1260px;
+	min-height:450px;
+	background-color:#fff;
+	overflow:hidden;
+}
+#figure{
+	width:25%;
+	float:left;
+	padding-top:15px;
+}
+#page{
+	text-align:center;
+}
+#page ul{
+	marin:0px auto;
+	
+}
+#page li{
+	width:50px;
+	height:36px;
+	float:left;
+	
+}
+#page a{
+color:#777;
+background-color:#eee;
+}
+#page li .first a{
+	
+	
+}
+@media(min-width: 250px)and (max-width:760px){
+	
+	#figure{
+	width:100%;
+		
+	}
+}
